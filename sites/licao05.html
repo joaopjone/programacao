@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Lição05</title>
+<!--
+fazerlogin desistema
+    
+-->
+    </head>
+    <body>
+        <div><a href="index.html">Página inicial</a></div>
+        <h1>Lição05</h1>
+        <div id="zona-secreta" style="visibility:hidden">cuidado, isto é uma zona secreta</div>
+
+        <script>
+             var mensagem = "por preencher";
+        var username = prompt("qual é a teu USERNAME?");
+                var password = prompt("qual é a tua password?");
+ 
+        if(username == "joaopaulo" && password=="123"){
+            mensagem = "Bem vindo, " + username;
+            document.getElementById("zona-secreta").style.visibility = "visible";
+
+        }  else{
+            mensagem = "Esta errada" ;
+        }
+        alert(mensagem);
+/*
+        var mare = prompt("qual é a tua altura") ;
+        var guardiola;
+        if(mare > 150){
+            guardiola = "és alto" ; 
+        }
+        else {
+            guardiola = "és baixo" ;
+        }
+        alert(guardiola)
+*/
+        function mostrarSecreto(){
+            document.getElementById("zona-secreta").style.visibility = "visible";
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>

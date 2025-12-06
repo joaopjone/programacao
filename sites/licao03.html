@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Lição03</title>
+    </head>
+    <body>
+        <div><a href="index.html">Página inicial</a></div>
+        <h1>Lição03</h1>
+        <script>
+          var numExames =  +prompt("quantos exames?");
+          var somaExames = 0;
+          for(var idx=0; idx<numExames; idx++){
+            var notaExame = +prompt(" a nota do exame " + (idx+1) + "?");
+            somaExames = somaExames + notaExame;
+            //alert(" alert");
+          }
+          var media = somaExames / numExames;
+          alert("media: " + media);
+        </script>
+
+
+
+
+
+
+
+
+
+    </body>
+
+</html>
